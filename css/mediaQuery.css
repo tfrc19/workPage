@@ -1,0 +1,57 @@
+@media screen and (max-width:800px)
+{
+    header{
+       
+        height: 80vh;
+    }
+    header .navbar .logo{
+        font-size: 25px!important;
+    }
+    .head-title .container{
+    margin-left: 0px;
+    }
+    .head-title .container .row .title{
+        text-align: center;
+    }
+    .head-title .container .row .title-emblema{
+        text-align: center;
+    
+    }
+    .head-title .container .row .title-emblema h4{
+        font-size: 16px;
+    }
+    .navbar-toggler-icon,.navbar-toggler{
+        color: #ffffff!important;
+    }
+    #collapsibleNavId{
+        background-color: rgba(0, 0, 0, 0.5);
+       
+    }
+ #collapsibleNavId ul{
+        width: 100%;
+        margin-left: 10px;
+        display:block!important;
+    }
+    #collapsibleNavId ul li a{
+        margin-left: 20px;
+        color: #ffffff!important;
+    }
+    #collapsibleNavId .nav-item .dropdown-menu{
+        border: none;
+        
+
+    }
+    #collapsibleNavId .nav-item .dropdown-menu a{
+        
+        margin-left: 10px;
+        /*color: #2271b3!important;*/
+        color: #cccccc!important;
+        font-weight: bold!important;
+    }
+    #collapsibleNavId .nav-item .dropdown-menu a:focus{
+        color: #000000!important;
+        background-color: #fff!important;
+        border-bottom: 1px solid #000000;
+    }
+ 
+}
