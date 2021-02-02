@@ -40,6 +40,9 @@ header .navbar-collapse{
 .navbar-nav li a{
     color: #ffffff!important;
 }
+.navbar-nav li a:hover{
+    text-shadow: 2px 2px 5px rgba(170, 238, 232,0.9);
+}
 
 .navbar-expand-sm .navbar-nav{
     flex-direction: row;
