@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url("../img/IA.gif");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header .navbar .logo{
+    color: #ffffff!important;
+    font-size: 30px;
+    margin-left: 25px!important;
+}
+header .navbar-collapse{
+    text-align: end;
+    justify-content: end!important;
+}
+#collapsibleNavId {
+    align-items: center!important;
+    align-content: center!important;
+    overflow: hidden;
+}
+.navbar-nav{
+   
+    width: 100%!important;
+    text-align: center!important;
+    align-items: center;
+    float: right!important;
+    color: #ffffff!important;
+    justify-content: flex-end!important;
+}
+.navbar-nav li{
+    padding: 0px 15px;
+}
+.navbar-nav li a{
+    color: #ffffff!important;
+}
+
+.navbar-expand-sm .navbar-nav{
+    flex-direction: row;
+}
+
+/*head-title*/
+
+.head-title{
+    top: -60%;
+    margin-top: 15%;
+}
+.head-title .container{  
+    margin-left: 10%;
+}
+.head-title .container .row .title{
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 40px;
+    
+    margin: 10px 80px;
+}
+.head-title .container .row .title h3{
+    font-size: 40px;
+}
+
+.head-title .container .row .title-emblema{
+    margin-top: 30px;
+    color: #ffffff;
+    font-style: italic;
+}
+.head-title .container .row .title-btn{
+    align-items: center;
+
+    text-align: center!important;
+    margin-top: 20px;
+}
+.head-title .container .row .title-btn button{
+    align-items: center!important;
+    text-align: center!important;
+    justify-content: center!important;
+    padding: 10px 20px;
+    border-radius: 5px!important;
+    color: #000000!important;
+    border: none;
+    border: 1px solid #000000;
+    /*background-color: rgba(124, 203, 199, 0.9);*/
+    background-color: rgba(170, 238, 232,0.9);
+    
+    /*margin: 20px 40%;*/
+}
+.head-title .container .row .title-btn a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+
