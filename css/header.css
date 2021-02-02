@@ -43,16 +43,25 @@ header .navbar-collapse{
 .navbar-nav li a:hover{
     text-shadow: 2px 2px 5px rgba(170, 238, 232,0.9);
 }
+.navbar-nav li a:active{
+    text-shadow: 2px 2px 5px rgba(170, 238, 232,0.9);
+}
+
 
 .navbar-expand-sm .navbar-nav{
     flex-direction: row;
 }
-
+.colorNavBar{
+    background-color:#000000!important;
+    /*background-color: rgba(170, 238, 232,1)!important;
+    position: sticky!important;*/
+}
 /*head-title*/
 
 .head-title{
     top: -60%;
-    margin-top: 15%;
+    padding-top:15%;
+    /*margin-top: 15%;*/
 }
 .head-title .container{  
     margin-left: 10%;
@@ -99,3 +108,17 @@ header .navbar-collapse{
     font-size: 18px;
 }
 
+/*Page Section*/
+
+.page-section{
+    margin-top: 50px;
+}
+
+.sticky+.content {
+    /*padding-top: 60px;*/
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
