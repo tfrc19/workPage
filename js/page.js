@@ -2,7 +2,9 @@ $(document).ready(function(e){
     var menu = $('#navbar');
     var origOffsetY = menu.offset().top;
     var pageSection = $('#page-section').offset().top,
-    conocenos = $('#conocenos');
+        navBar = $('#navbar').height(),
+        inicio=$('#inicio');
+        conocenos = $('#conocenos');
     
     
     function scroll() 
@@ -20,15 +22,21 @@ $(document).ready(function(e){
 
         }
     }
-
-    document.onscroll=scroll;
-
-  
-    conocenos.on('click',function(e){
-        
+    function scrollPage(pageSection,e){
         $('html,body').animate({
             scrollTop:pageSection
         },500);
         e.preventDefault();
+    }
+
+    document.onscroll=scroll;
+
+
+    conocenos.on('click',function(e){
+        scrollPage((pageSection-navBar),e);
     });
+    inicio.on('click',function(e){
+        scrollPage((pageSection-navBar),e);
+    });
+
 });
