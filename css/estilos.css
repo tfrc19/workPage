@@ -1,6 +1,5 @@
 .page-section {
   overflow: hidden;
-  border-bottom: 0.5px solid #cccccc;
   margin-top: 10px; }
   .page-section .container .row-page {
     margin-top: 40px !important; }
@@ -50,57 +49,129 @@
         text-align: center;
         line-height: 24px; }
 
+.webSite {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #F6F6F6;
+  margin: 50px auto; }
+  .webSite .row {
+    margin: 40px auto; }
+    .webSite .row .title {
+      width: 100%;
+      overflow: hidden;
+      margin: 40px 0px; }
+      .webSite .row .title h4 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        font-style: italic;
+        color: #000000; }
+    .webSite .row .contenedor-producto {
+      border: 0.5px solid #000000; }
+      .webSite .row .contenedor-producto .titulo-producto {
+        margin: 40px auto;
+        text-align: center; }
+        .webSite .row .contenedor-producto .titulo-producto h4 {
+          color: #000000;
+          font-weight: 800;
+          font-size: 30px;
+          margin-top: 20px; }
+      .webSite .row .contenedor-producto .descripcion-producto {
+        margin: 10px 5px; }
+        .webSite .row .contenedor-producto .descripcion-producto p {
+          font-size: 18px;
+          line-height: 25px;
+          text-align: center; }
+      .webSite .row .contenedor-producto .btn-contacto {
+        margin: 10px auto !important;
+        text-align: center; }
+
+.contacto {
+  background-image: url("../img/IA2.gif");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: 80px; }
+  .contacto .container .row .titulo-contacto {
+    margin: 0px auto;
+    margin-top: 40px;
+    width: 70%; }
+    .contacto .container .row .titulo-contacto h4 {
+      width: 100%;
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center; }
+    .contacto .container .row .titulo-contacto p {
+      color: #ffffff;
+      font-size: 16px;
+      text-align: center;
+      font-style: italic; }
+  .contacto .container .row .frm-contacto {
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 50px; }
+    .contacto .container .row .frm-contacto form {
+      margin: 20px 0px; }
+      .contacto .container .row .frm-contacto form input[type="text"],
+      .contacto .container .row .frm-contacto form input[type="email"],
+      .contacto .container .row .frm-contacto form input[type="phone"],
+      .contacto .container .row .frm-contacto form textarea {
+        width: 90%;
+        margin: 10px 5%;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: none;
+        border-bottom: 1px solid #ffffff;
+        border-radius: 5px;
+        outline: none !important;
+        outline-width: 0 !important;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none; }
+      .contacto .container .row .frm-contacto form input[type="submit"] {
+        width: 14%;
+        margin: 20px 43%;
+        text-align: center !important;
+        align-content: center !important;
+        font-size: 12px; }
+
 @media screen and (max-width: 800px) {
   .page-section {
     overflow: hidden;
     border-bottom: 0.5px solid #cccccc;
     margin-top: 10px; }
     .page-section .container .row-page {
-      margin-top: 40px !important; }
-    .page-section .container .row {
-      font-family: Arial, Helvetica, sans-serif;
-      margin-bottom: 20px; }
-      .page-section .container .row .title {
-        width: 100%;
-        overflow: hidden;
-        margin-top: 40px; }
-        .page-section .container .row .title h4 {
-          text-align: center;
-          font-size: 20px;
-          font-weight: 600;
-          font-style: italic;
-          color: #000000; }
-        .page-section .container .row .title h3 {
-          text-align: center;
-          font-size: 18px;
-          font-weight: 600;
-          color: #000000;
-          font-style: italic;
-          margin-top: 0px; }
-      .page-section .container .row .icon-page {
-        text-align: center;
-        overflow: hidden;
-        margin: 0px !important;
-        padding: 0px !important;
-        height: 70%; }
-        .page-section .container .row .icon-page a {
-          font-size: 40px !important;
-          color: #cccccc;
-          margin: 0px !important;
-          padding: 0px !important; }
-          .page-section .container .row .icon-page a i:hover {
-            color: #000000; }
-      .page-section .container .row .title-page {
-        text-align: center;
-        overflow: hidden;
-        margin: 0px !important;
-        padding: 0px !important; }
-        .page-section .container .row .title-page p {
-          font-size: 12px;
-          font-weight: 600;
-          font-style: italic;
-          margin: 0px !important;
-          text-align: center;
-          line-height: 16px; } }
+      margin-top: 0px !important; }
+      .page-section .container .row-page .col-12 {
+        margin-bottom: 10px !important; }
+    .page-section .container .row .title h4 {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: italic;
+      color: #000000; }
+    .page-section .container .row .title h3 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: #000000;
+      font-style: italic;
+      margin-top: 0px; }
+    .page-section .container .row .icon-page a {
+      font-size: 50px !important;
+      color: #cccccc;
+      margin: 0px !important;
+      padding: 0px !important; }
+      .page-section .container .row .icon-page a i:hover {
+        color: #000000; }
+    .page-section .container .row .title-page p {
+      font-size: 14px;
+      font-weight: 600;
+      font-style: italic;
+      margin: 0px !important;
+      text-align: center;
+      line-height: 16px; } }
 
 /*# sourceMappingURL=estilos.css.map */
