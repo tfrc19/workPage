@@ -91,7 +91,8 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
-  margin-top: 80px; }
+  margin-top: 80px;
+  clip-path: circle(190vh at 70% -70vh); }
   .contacto .container .row .titulo-contacto {
     margin: 0px auto;
     margin-top: 40px;
