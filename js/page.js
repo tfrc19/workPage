@@ -2,9 +2,13 @@ $(document).ready(function(e){
     var menu = $('#navbar');
     var origOffsetY = menu.offset().top;
     var pageSection = $('#page-section').offset().top,
+        pageContact=$('#contact-page').offset().top,
+        pageHeader=$('#header-page').offset().top,
         navBar = $('#navbar').height(),
+        contacto=$('#contacto');
         inicio=$('#inicio');
         conocenos = $('#conocenos');
+        servicio=$('#servicio');
     
     
     function scroll() 
@@ -36,7 +40,14 @@ $(document).ready(function(e){
         scrollPage((pageSection-navBar),e);
     });
     inicio.on('click',function(e){
+        scrollPage((pageHeader),e);
+    });
+    contacto.on('click',function(e){
+        scrollPage((pageContact-navBar),e);
+    });
+    servicio.on('click',function(e){
         scrollPage((pageSection-navBar),e);
     });
+
 
 });
