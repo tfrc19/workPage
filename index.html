@@ -23,10 +23,11 @@
 
             <span class="navbar-toggler-icon" id="toggle-icon" data-toggle="collapse" data-target="#collapsibleNavId"
                 aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i
-                    class="fas fa-bars"></i></span>
-            <span class="" id="toggle-icon-x" style="display: none;" data-toggle="collapse"
-                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation"></span>
+                    class="fas fa-bars " id="navVisible"></i>
+                <i class="fas fa-times" id="navinVisible" style="display: none;"></i></span>
+            <span class="" style="display: none;" data-toggle="collapse" data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"
+                id="btnCloseNav">X</span>
         </button>
         <div class="collapse navbar-collapse " id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -40,7 +41,7 @@
                     <a class="nav-link" href="#">Acerca de <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Equipo</a>
+                    <a class="nav-link" href="#" id="equipo">Equipo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="contacto">Contacto</a>
@@ -89,7 +90,7 @@
             <div class="col-12 col-md-3">
                 <div class="icon-page">
 
-                    <a href="#"><i class="fas fa-laptop-code"></i></a>
+                    <a href="#" id="btnWebSite"><i class="fas fa-laptop-code"></i></a>
                 </div>
                 <div class="title-page">
                     <p>Una Pagina Web</p>
@@ -129,9 +130,9 @@
         </div>
     </div>
 </section>
-
-<section class="webSite" id="webSite">
-    <article class="container">
+<!--Page Service-->
+<section class="page-service">
+    <article class="container" id="webSite">
         <div class="row">
             <div class="col-12">
                 <div class="title">
@@ -181,12 +182,135 @@
         </div>
     </article>
 
+    <article class="container" id="webSite">
+        <div class="row">
+            <div class="col-12">
+                <div class="title">
+                    <h4>Que vender por internet no sea un limitante</h4>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="contenedor-producto">
+                    <div class="titulo-producto">
+                        <h4>E-comerce</h4>
+                    </div>
+                    <div class="descripcion-producto">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est libero,
+                            repellendus recusandae quibusdam cupiditate quae quasi eius nobis consequatur
+                            repudiandae!</p>
+                    </div>
+                    <div class="btn-contacto">
+                        <a href="#" class="btn btn-outline-dark btn-lg ">Contactar</a>
+                    </div>
+                </div>
 
-    
+            </div>
+
+            <div class="col-12 col-md-3">
+                <div class="contenedor-producto">
+                    <div class="titulo-producto">
+                        <h4>E-comerce</h4>
+                    </div>
+                    <div class="descripcion-producto">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est libero,
+                            repellendus recusandae quibusdam cupiditate quae quasi eius nobis consequatur
+                            repudiandae!</p>
+                    </div>
+                    <div class="btn-contacto">
+                        <a href="#" class="btn btn-outline-dark btn-lg ">Contactar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="img">
+                    <img src="img/ecormerce.png" alt="" class="img-fluid">
+                </div>
+            </div>
 
 
-
+        </div>
+    </article>
 </section>
+<!--Page Acerca-de -->
+<!--<section class="page-acercade">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="titulo">
+                    <h4>Acerca de</h4>
+                </div>
+                <div class="col-12">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore non nam atque. Voluptatibus, velit
+                    delectus. Id ex quaerat quod explicabo amet? Ad odio molestias, ullam hic facilis dolorum assumenda
+                    id incidunt? Adipisci autem reiciendis repellendus modi molestiae placeat suscipit quaerat libero
+                    doloremque! Sint aliquid aperiam nostrum, nesciunt voluptates maxime, id nam eveniet, cumque
+                    molestias temporibus dolores facilis corrupti tenetur quos. Unde obcaecati eum ut, ratione cum nemo
+                    corrupti commodi ad, laborum possimus ipsa, nesciunt iusto voluptates nulla quis iste nobis rerum
+                    natus sint deserunt. Praesentium iusto, provident harum labore et vitae maxime necessitatibus
+                    tempora debitis aperiam at eligendi commodi nisi?
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+<!--Team Page-->
+<section class="page-team" id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="titulo">
+                    <h3>Nuestro Equipo de Trabajo</h3>
+                    <p><i>Hacemos realidad lo que te imaginas</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="img-person">
+                    <img src="img/foto-perfil.png" class="img-fluid" alt="fernandorc">
+                </div>
+                <div class="name-person">
+                    <h4>Fernando Roque Colt</h4>
+                </div>
+                <div class="description-person">
+                    <h4>CEO & Co-founder</h4>
+                </div>
+                <div class="social-media-person">
+                    <!--<a href="#" id="facebook" class="color-fondo "><i class="facebook fab fa-facebook-f "></i></a>-->
+                    <a href="#" id="twitter" class="color-fondo "><i class="twitter fab fa-twitter"></i></a>
+                    <!--<a href="#" class="color-fondo " id="instagram"><i class="instagram fab fa-instagram"></i></a>-->
+                    <a href="#" id="correoElectronico" class="color-fondo "><i class="email far fa-envelope"></i></a>
+                    <!--<a href="#" class="color-fondo " id="whatsapp"><i class="whatsapp fab fa-whatsapp"></i></a>-->
+                    <a href="#" id="linkedin" class="color-fondo "><i class="likedin fab fa-linkedin-in"></i></a>
+                    <a href="#" id="github" class="color-fondo"><i class="github fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="img-person">
+                    <img src="img/user_avatar.png" class="img-fluid" alt="fernandorc">
+                </div>
+                <div class="name-person">
+                    <h4>Kevin Egas Arizala</h4>
+                </div>
+                <div class="description-person">
+                    <h4>CEO & Co-founder</h4>
+                </div>
+                <div class="social-media-person">
+                    <!--<a href="#" id="facebook" class="color-fondo "><i class="facebook fab fa-facebook-f "></i></a>-->
+                    <a href="#" id="twitter" class="color-fondo "><i class="twitter fab fa-twitter"></i></a>
+                    <!--<a href="#" class="color-fondo " id="instagram"><i class="instagram fab fa-instagram"></i></a>-->
+                    <a href="#" id="correoElectronico" class="color-fondo "><i class="email far fa-envelope"></i></a>
+                    <!--<a href="#" class="color-fondo " id="whatsapp"><i class="whatsapp fab fa-whatsapp"></i></a>-->
+                    <a href="#" id="linkedin" class="color-fondo "><i class="likedin fab fa-linkedin-in"></i></a>
+                    <a href="#" id="github" class="color-fondo"><i class="github fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!--Contact Page Section-->
 <section class="page-section contacto" id="contact-page">
     <div class="container">
@@ -212,7 +336,25 @@
     </div>
 </section>
 
-
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <p class="text-lg-left">E-code System</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="social-media">
+                    <a href="#" id="correoElectronico" class="color-fondo "><i class="email far fa-envelope"></i></a>
+                    <a href="#" id="linkedin" class="color-fondo "><i class="likedin fab fa-linkedin-in"></i></a>
+                    <a href="#" id="twitter" class="color-fondo "><i class="twitter fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <p class="text-lg-right"><a href="#">Politica y privacidad</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <body>
 

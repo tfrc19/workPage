@@ -49,41 +49,99 @@
         text-align: center;
         line-height: 24px; }
 
-.webSite {
+.page-service {
   font-family: Arial, Helvetica, sans-serif;
   background: #F6F6F6;
-  margin: 50px auto; }
-  .webSite .row {
+  margin: 50px auto;
+  padding-bottom: 20px; }
+  .page-service .container {
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #cccccc; }
+  .page-service .row {
     margin: 40px auto; }
-    .webSite .row .title {
+    .page-service .row .title {
       width: 100%;
       overflow: hidden;
       margin: 40px 0px; }
-      .webSite .row .title h4 {
+      .page-service .row .title h4 {
         text-align: center;
         font-size: 28px;
         font-weight: 600;
         font-style: italic;
         color: #000000; }
-    .webSite .row .contenedor-producto {
-      border: 0.5px solid #000000; }
-      .webSite .row .contenedor-producto .titulo-producto {
+    .page-service .row .contenedor-producto {
+      box-shadow: 10px 10px 10px 7px #cccccc;
+      border: none !important;
+      padding: 20px 0px; }
+      .page-service .row .contenedor-producto .titulo-producto {
         margin: 40px auto;
         text-align: center; }
-        .webSite .row .contenedor-producto .titulo-producto h4 {
+        .page-service .row .contenedor-producto .titulo-producto h4 {
           color: #000000;
           font-weight: 800;
           font-size: 30px;
           margin-top: 20px; }
-      .webSite .row .contenedor-producto .descripcion-producto {
+      .page-service .row .contenedor-producto .descripcion-producto {
         margin: 10px 5px; }
-        .webSite .row .contenedor-producto .descripcion-producto p {
+        .page-service .row .contenedor-producto .descripcion-producto p {
           font-size: 18px;
           line-height: 25px;
           text-align: center; }
-      .webSite .row .contenedor-producto .btn-contacto {
+      .page-service .row .contenedor-producto .btn-contacto {
         margin: 10px auto !important;
         text-align: center; }
+
+.page-team .container .row {
+  margin-bottom: 10px; }
+  .page-team .container .row .titulo {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center; }
+    .page-team .container .row .titulo h3 {
+      font-size: 30px;
+      color: #000000;
+      font-weight: 800;
+      font-style: italic; }
+  .page-team .container .row .img-person {
+    margin: 5px auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 0px;
+    width: 162px;
+    height: 170px; }
+    .page-team .container .row .img-person img {
+      border: none;
+      border-radius: 50% !important;
+      align-content: center;
+      border: 5px solid #cccccc; }
+      .page-team .container .row .img-person img:hover {
+        border: 3px solid #000000; }
+  .page-team .container .row .name-person {
+    width: 50%;
+    margin: 0px 25%;
+    padding: 0px;
+    text-align: center; }
+    .page-team .container .row .name-person h4 {
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center; }
+  .page-team .container .row .description-person {
+    width: 50%;
+    margin: 0px auto;
+    text-align: center; }
+    .page-team .container .row .description-person h4 {
+      font-size: 12px;
+      color: #cccccc;
+      text-align: center; }
+  .page-team .container .row .social-media-person {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center; }
+    .page-team .container .row .social-media-person a {
+      color: #000000;
+      font-size: 30px;
+      padding: 0px 5px; }
 
 .contacto {
   background-image: url("../img/IA2.gif");
@@ -138,6 +196,22 @@
         align-content: center !important;
         font-size: 12px; }
 
+footer .row .social-media {
+  text-align: center;
+  margin: 20px auto; }
+  footer .row .social-media a {
+    font-size: 20px;
+    color: #000000;
+    padding: 0px 7px; }
+footer .row p {
+  font-size: 16px;
+  margin: 20px auto;
+  text-align: center;
+  color: #cccccc; }
+  footer .row p a {
+    text-decoration: none;
+    color: #000000; }
+
 @media screen and (max-width: 800px) {
   .page-section {
     overflow: hidden;
@@ -173,6 +247,105 @@
       font-style: italic;
       margin: 0px !important;
       text-align: center;
-      line-height: 16px; } }
+      line-height: 16px; }
+
+  .page-service {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F6F6F6;
+    margin: 0px auto; }
+    .page-service .row {
+      margin: 0px auto; }
+      .page-service .row .contenedor-producto {
+        border: 0.5px solid #000000;
+        margin-top: 30px; }
+        .page-service .row .contenedor-producto .titulo-producto {
+          margin: 40px auto;
+          text-align: center; }
+          .page-service .row .contenedor-producto .titulo-producto h4 {
+            color: #000000;
+            font-weight: 800;
+            font-size: 30px;
+            margin-top: 20px; }
+        .page-service .row .contenedor-producto .descripcion-producto {
+          margin: 10px 5px; }
+          .page-service .row .contenedor-producto .descripcion-producto p {
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center; }
+        .page-service .row .contenedor-producto .btn-contacto {
+          margin: 10px auto !important;
+          text-align: center; }
+
+  .contacto {
+    background-image: url("../img/IA2.gif");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 80px;
+    clip-path: circle(190vh at 70% -70vh); }
+    .contacto .container .row .titulo-contacto {
+      margin: 0px auto;
+      margin-top: 40px;
+      width: 100%; }
+      .contacto .container .row .titulo-contacto h4 {
+        width: 100%;
+        color: #ffffff;
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center; }
+      .contacto .container .row .titulo-contacto p {
+        color: #ffffff;
+        font-size: 14px;
+        text-align: center;
+        font-style: italic; }
+    .contacto .container .row .frm-contacto {
+      width: 100%;
+      margin: 0px auto;
+      margin-top: 30px; }
+      .contacto .container .row .frm-contacto form {
+        margin: 20px 0px; }
+        .contacto .container .row .frm-contacto form input[type="text"],
+        .contacto .container .row .frm-contacto form input[type="email"],
+        .contacto .container .row .frm-contacto form input[type="phone"],
+        .contacto .container .row .frm-contacto form textarea {
+          width: 90%;
+          margin: 10px 5%;
+          padding: 10px 10px;
+          font-size: 12px;
+          border: none;
+          border-bottom: 1px solid #ffffff;
+          border-radius: 5px;
+          outline: none !important;
+          outline-width: 0 !important;
+          box-shadow: none;
+          -moz-box-shadow: none;
+          -webkit-box-shadow: none; }
+        .contacto .container .row .frm-contacto form input[type="submit"] {
+          width: 50%;
+          margin: 20px 25%;
+          text-align: center !important;
+          align-content: center !important;
+          font-size: 12px; }
+
+  .page-team .container .row {
+    margin: 0px !important;
+    margin-top: 10px; }
+    .page-team .container .row .titulo {
+      margin: 0px;
+      margin-top: 20px; }
+    .page-team .container .row .col-12 {
+      margin-bottom: 40px; }
+
+  footer .row .col-12 {
+    margin: 0px; }
+  footer .row .social-media {
+    margin: 0px; }
+    footer .row .social-media a {
+      padding: 0px 7px;
+      font-size: 24px; }
+  footer .row p {
+    margin: 5px auto; } }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -54,10 +54,16 @@
                     margin: 0px!important
                     text-align: center
                     line-height: 24px
-.webSite
+.page-service
     font-family: Arial, Helvetica, sans-serif
     background: #F6F6F6
     margin: 50px auto
+    padding-bottom: 20px
+    
+    .container
+        padding-bottom: 20px
+        border-bottom: 0.5px solid #cccccc
+        
     .row
         margin: 40px auto
         .title
@@ -71,8 +77,10 @@
                 font-style: italic
                 color: #000000
         .contenedor-producto
-            //box-shadow: 5px 5px 3px #cccccc
-            border: .5px solid #000000
+            box-shadow: 10px 10px 10px 7px #cccccc
+            border: none!important
+            padding: 20px 0px
+            //border: .5px solid #000000
             .titulo-producto
                 margin: 40px auto
                 text-align: center
@@ -95,6 +103,62 @@
 
             
 
+.page-team
+    .container
+        .row
+            margin-bottom: 10px
+            .titulo
+                width: 100%
+                margin-bottom: 50px
+                text-align: center
+                h3
+                    font-size: 30px
+                    color: #000000
+                    font-weight: 800
+                    font-style: italic
+            .img-person
+                
+                margin: 5px auto
+                overflow: hidden
+                text-align: center
+                padding: 0px
+                width: 162px
+                height: 170px
+                
+                img
+                    border: none
+                    border-radius: 50%!important
+                    align-content: center
+                    border: 5px solid #cccccc
+                    &:hover
+                        border: 3px solid #000000
+            .name-person
+                width: 50%
+                margin: 0px 25%
+                padding: 0px
+                text-align: center
+                h4
+                    font-size: 20px
+                    font-weight: 600
+                    text-transform: uppercase
+                    text-align: center
+            .description-person
+                width: 50%
+                margin: 0px auto
+                text-align: center
+                
+                h4
+                    font-size: 12px
+                    color: #cccccc
+                    text-align: center
+            .social-media-person
+                width: 80%
+                margin: 0px auto
+                text-align: center
+                a
+                    color: #000000
+                    font-size: 30px
+                    padding: 0px 5px
 
 
 .contacto
@@ -156,7 +220,26 @@
                         align-content: center!important
                         font-size: 12px
                     
-    
+footer
+    //background: red
+    .row
+        .social-media
+            text-align: center
+            margin: 20px auto
+            a
+                font-size: 20px
+                color: #000000
+                padding: 0px 7px
+        p
+            font-size: 16px
+            margin: 20px auto
+            text-align: center
+            color: #cccccc
+            a
+                text-decoration: none
+                color: #000000
+
+           
 
 
 
@@ -206,3 +289,114 @@
                         margin: 0px!important
                         text-align: center
                         line-height: 16px
+    
+    .page-service
+        font-family: Arial, Helvetica, sans-serif
+        background: #F6F6F6
+        margin: 0px auto
+        .row
+            margin: 0px auto
+            .title
+               
+            .contenedor-producto
+                border: .5px solid #000000
+                margin-top: 30px
+                .titulo-producto
+                    margin: 40px auto
+                    text-align: center
+                    h4
+                        color: #000000
+                        font-weight: 800
+                        font-size: 30px
+                        margin-top: 20px
+                .descripcion-producto
+                    margin: 10px 5px
+                    p
+                        font-size: 18px
+                        line-height: 25px
+                        text-align: center
+                .btn-contacto
+                    margin: 10px auto!important
+                    text-align: center
+    
+    .contacto
+        background-image: url("../img/IA2.gif")
+        background-attachment: fixed
+        background-size: cover
+        background-position: center
+        height: 100vh
+        margin-top: 80px
+        clip-path: circle(190vh at 70% -70vh)
+        .container
+            .row
+                .titulo-contacto
+                    margin: 0px auto
+                    margin-top: 40px
+                    width: 100%
+                
+                    h4
+                        width: 100%
+                        color: #ffffff
+                        font-size: 35px
+                        font-weight: bold
+                        text-transform: uppercase
+                        text-align: center
+                    p
+                        color: #ffffff
+                        font-size: 14px
+                        text-align: center
+                        font-style: italic
+                    
+                .frm-contacto
+                    width: 100%
+                    margin: 0px auto
+                    margin-top: 30px   
+                
+                    form
+                        margin: 20px 0px
+                        input[type="text"],
+                        input[type="email"],
+                        input[type="phone"],
+                        textarea
+                            width: 90%
+                            margin: 10px 5%
+                            padding: 10px 10px
+                            font-size: 12px
+                            border: none
+                            border-bottom: 1px solid #ffffff
+                            border-radius: 5px
+                            &:focus
+                            outline: none !important
+                            outline-width: 0 !important
+                            box-shadow: none
+                            -moz-box-shadow: none
+                            -webkit-box-shadow: none
+                        input[type="submit"]
+                            width: 50%
+                            margin: 20px 25%
+                            text-align: center!important
+                            align-content: center!important
+                            font-size: 12px
+
+    .page-team
+        .container
+            .row
+                margin: 0px!important
+                margin-top: 10px 
+                .titulo
+                    margin: 0px
+                    margin-top: 20px
+                .col-12
+                    margin-bottom: 40px
+
+    footer
+        .row
+            .col-12
+                margin: 0px
+            .social-media
+                margin: 0px
+                a
+                    padding: 0px 7px
+                    font-size: 24px
+            p
+                margin: 5px auto
