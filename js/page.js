@@ -5,6 +5,7 @@ $(document).ready(function(e){
         pageContact=$('#contact-page').offset().top,
         pageHeader=$('#header-page').offset().top,
         webSite =$('#webSite').offset().top,
+        ecomerce=$('#ecomerce').offset().top,
         navBar = $('#navbar').height(),
         pageTeam=$('#team').offset().top,
         contacto=$('#contacto');
@@ -13,8 +14,10 @@ $(document).ready(function(e){
         servicio=$('#servicio');
         equipo=$('#equipo');
         btnWebSite = $('#btnWebSite');
+        btnEcomerce=$('#btnEcomerce');
+        btnContactar=$('#contactar');
     
-    
+   
     function scroll() 
     { 
         if ($(window).scrollTop() >= origOffsetY) 
@@ -79,7 +82,12 @@ $('#navinVisible').on("click",function(e){
         //alert(webSite);
         scrollPage(webSite-navBar,e);
     });
-   
+    btnEcomerce.on('click',function(e){
+        scrollPage((ecomerce-navBar),e);
+    });
+    btnContactar.on('click',function(e){
+        scrollPage((pageContact-navBar),e);
+    });
     
 
 
