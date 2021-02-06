@@ -56,7 +56,7 @@
   padding-bottom: 20px; }
   .page-service .container {
     padding-bottom: 20px;
-    border-bottom: 0.5px solid #cccccc; }
+    border-bottom: 0.5px dotted #cccccc; }
   .page-service .row {
     margin: 40px auto; }
     .page-service .row .title {
@@ -71,6 +71,7 @@
         color: #000000; }
     .page-service .row .contenedor-producto {
       box-shadow: 10px 10px 10px 7px #cccccc;
+      background: #ffffff;
       border: none !important;
       padding: 20px 0px; }
       .page-service .row .contenedor-producto .titulo-producto {
@@ -91,11 +92,14 @@
         margin: 10px auto !important;
         text-align: center; }
 
+.page-acercade {
+  margin-bottom: 40px; }
+
 .page-team .container .row {
   margin-bottom: 10px; }
   .page-team .container .row .titulo {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     text-align: center; }
     .page-team .container .row .titulo h3 {
       font-size: 30px;
@@ -277,7 +281,7 @@ footer .row p {
           text-align: center; }
 
   .contacto {
-    background-image: url("../img/IA2.gif");
+    background-image: url("../img/wallpaper-contact.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;

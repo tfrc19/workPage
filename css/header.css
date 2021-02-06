@@ -122,3 +122,35 @@ header .navbar-collapse{
     top: 0;
     width: 100%;
 }
+
+.icon-top{
+        display:scroll;
+        position:fixed;
+        /*bottom:400px;*/
+        right:0px;
+        width: 50px;
+        height: 50px;
+        background-color:rgba(170, 238, 232,0.9);
+        border-radius: 50%;
+        text-align: center;
+        bottom: 0;
+}
+.icon-top .icon{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 20% auto;
+}
+.icon-top .icon a{
+    font-size: 20px;
+    color: #000000;
+    animation: animationIcon 5s infinite;
+}
+@keyframes animationIcon{
+    from{
+        color: #000000;
+    }
+    to{
+        color: #ffffff;
+    }
+}

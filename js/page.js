@@ -6,6 +6,8 @@ $(document).ready(function(e){
         pageHeader=$('#header-page').offset().top,
         webSite =$('#webSite').offset().top,
         ecomerce=$('#ecomerce').offset().top,
+        digital=$('#digital').offset().top,
+        cloud=$('#cloud').offset().top,
         navBar = $('#navbar').height(),
         pageTeam=$('#team').offset().top,
         contacto=$('#contacto');
@@ -16,7 +18,11 @@ $(document).ready(function(e){
         btnWebSite = $('#btnWebSite');
         btnEcomerce=$('#btnEcomerce');
         btnContactar=$('#contactar');
+        btnDigital=$('#btnDigital');
+        btnCloud=$('#btnCloud');
+        iconTop=$('#iconTop');
     
+    iconTop.hide();
    
     function scroll() 
     { 
@@ -27,7 +33,13 @@ $(document).ready(function(e){
             if($(window).scrollTop()==origOffsetY)
                 {
                     menu.removeClass('bg-primary colorNavBar fixed-top ');
-                }                  
+                } 
+            if($(window).scrollTop()>=pageSection){
+                iconTop.show();
+            }    
+            if($(window).scrollTop()<=pageSection){
+                iconTop.hide();
+            }              
         else 
         {
 
@@ -44,6 +56,7 @@ $(document).ready(function(e){
         $('#navVisible').css({"display":"block"});
         
     }
+    
 
     document.onscroll=scroll;
 
@@ -60,6 +73,10 @@ $('#navinVisible').on("click",function(e){
     $('#collapsibleNavId').css({"display":"none"});
 });
 
+    iconTop.on('click',function(e){
+        scrollPage((pageHeader),e);
+       
+    })
     conocenos.on('click',function(e){
         scrollPage((pageSection-navBar),e);
     });
@@ -81,13 +98,22 @@ $('#navinVisible').on("click",function(e){
         //scrollPage((webSite-navbar),e);
         //alert(webSite);
         scrollPage(webSite-navBar,e);
+        
     });
     btnEcomerce.on('click',function(e){
         scrollPage((ecomerce-navBar),e);
     });
+    btnDigital.on('click',function(e){
+        scrollPage((digital-navBar),e);
+    });
+    btnCloud.on('click',function(e){
+        scrollPage((cloud-navBar),e);
+    });
     btnContactar.on('click',function(e){
         scrollPage((pageContact-navBar),e);
     });
+   
+
     
 
 
